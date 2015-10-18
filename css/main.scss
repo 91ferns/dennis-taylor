@@ -1,0 +1,179 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	font: 81.25%/1 "arial",helvetica,sans-serif;
+}
+body {background-color: #F2F0E4;}
+#site-wrapper {}
+
+#top-bar {height: auto; width: 100%; min-height: 42px;}
+#top-bar {
+	background-color: #EEEEE5;
+	border-bottom: 1px solid #ccc;
+	color: #333;
+}
+
+/** override default links **/
+
+a, a:link, a:visited {
+	color: #744b2c;
+	text-decoration: none;
+}
+
+a:hover, a:focus, a:active {text-decoration: underline;}
+
+a.ferns, a.ferns:link, a.ferns:visited {
+	color: #35845F;
+}
+
+/** end link override */
+
+#top-bar ul {float: right; list-style-type: none; padding-top: 10px; padding-right: 40px; padding-bottom: 10px;}
+#top-bar ul li {display: block; float: right; width: 100px; font-size: 1.3em; text-align: center; padding: 3px 0px;}
+#top-bar ul li a, #top-bar ul li a:link, #top-bar ul li a:visited { text-decoration: none; color: black;}
+#top-bar ul li a:focus, #top-bar ul li a:hover, #top-bar ul li a:active { text-decoration: underline; }
+
+#no-top-bar {width: 880px; margin: 0 auto 0; padding-top: 12px;}
+
+.header{ padding-bottom: 18px; }
+#logo a, #logo a img {border: none;}
+
+
+div#under-header {
+	height: 77px; background-color: #5b3b23;
+	-webkit-box-shadow: 0px -1px 6px rgba(50, 50, 50, 0.82);
+	-moz-box-shadow:    0px -1px 6px rgba(50, 50, 50, 0.82);
+	box-shadow:         0px -1px 6px rgba(50, 50, 50, 0.82);}
+
+div#under-header ul { padding: 0; margin: 0; list-style-type: none;}
+div#under-header ul li {
+	display: block;
+	float: left;
+	width: 126px;
+	font-size: 1.4em;
+	color: white;
+	height: 77px;
+	border-right: 1px solid #74654c;
+	border-left: 1px solid #4a301e;
+}
+div#under-header ul li:hover, div#under-header ul li.active {
+
+	background-image: linear-gradient(top, rgb(110,72,45) 18%, rgb(91,59,35) 68%);
+	background-image: -o-linear-gradient(top, rgb(110,72,45) 18%, rgb(91,59,35) 68%);
+	background-image: -moz-linear-gradient(top, rgb(110,72,45) 18%, rgb(91,59,35) 68%);
+	background-image: -webkit-linear-gradient(top, rgb(110,72,45) 18%, rgb(91,59,35) 68%);
+	background-image: -ms-linear-gradient(top, rgb(110,72,45) 18%, rgb(91,59,35) 68%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.18, rgb(110,72,45)),
+		color-stop(0.68, rgb(91,59,35))
+	);
+}
+div#under-header ul li a { text-decoration: none; font-variant: small-caps; color: white; font-weight: bold; font-size: 0.92em;
+	padding: 30px 13px 20px;
+	width: 100px;
+	height: 27px;
+	display: block;}
+div#under-header ul li a {}
+
+div#content { height: 370px; padding-top: 16px;}
+div#content .left {
+	position: absolute;
+
+}
+div#content .left h1 { color: #D76107; font-size: 2em; font-weight: bold;}
+div#content .left h2 { color: #99806C; font-size: 1.67em; font-weight: 200; padding-top: 2px; }
+div#content .left p {padding-top: 5px; font-size: 1.23em;}
+div#content .left {width: 300px; padding-top: 30px; padding-left: 40px;}
+
+div#content .right {
+	height: 300px;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+div#content, div#subcontent {font-size: 1.17em;line-height: 1.33em;}
+
+div#subcontent {
+	padding-bottom: 60px;
+	padding-top: 20px;
+	background-color: #EFEFE1; border-top: 1px solid #b3b3b3; border-bottom: 1px solid #b3b3b3;
+	min-height: 120px;
+}
+
+div#subcontent .container {width: 880px; margin: 0 auto 0;}
+div#subcontent .container h1 {padding-bottom: 8px;}
+#subcontent h1 {font-size: 1.8em; line-height: 2em;padding-top: 0.2em;padding-bottom:0.4em;}
+div#subcontent .container p {line-height: 1.5em; font-size: 1.2em;}
+
+.footer {padding: 40px 0px 20px;/* border-top: 1px solid #6e482d;*/ width: 880px; margin: 0 auto 0; font-size: 1.15em;}
+.footer .middle, .footer .left {line-height: 1.3em; width: 350px;}
+.footer .middle strong, .footer .left strong {font-size: 1.1em;}
+
+.footer .left {float: left;width: 400px;}
+.footer .middle {width: 300px; float: left;}
+
+.ferns {color: #35845F; text-decoration: none;}
+.ferns:hover {text-decoration: underline;}
+
+#login-form-wrapper {
+	width: 600px;
+	margin: 0 auto 0;
+}
+
+#login-hide {
+	padding: 120px 0px 120px;
+}
+
+#login-form-wrapper h2, #login-form-wrapper p {
+	padding-bottom: 6px;
+	line-height: 1.3em;
+}
+
+/** PASTED **/
+
+.ferns-hover {padding: 0.45em 1.0em; border: 1px solid #999; outline: none;}
+.ferns-hover:hover {border-color: #999;}
+.ferns-hover:focus, .ferns-hover:active
+.ferns-hover:focus:hover, .ferns-hover:active:hover {
+    box-shadow: 0 0 2px #5B3B23;
+    border-color: #744b2c;
+}
+
+.form-row {padding: 0px 8px 6px 8px;}
+.form-row label {width: 140px; padding: 5px 25px 5px 10px; float: left; height: 1em;}
+.form-row .input-div, .form-row .alternate-data {display: block; padding-left: 200px; }
+
+.form-row .input-div textarea, .form-row .input-div input {
+	width: 90%;
+	padding: 3px 5px;
+}
+
+.form-row {
+    padding-top: 0.5em;
+}
+
+.rectangle-button {
+
+    display: block;
+    padding: 0.43em 1.152em;
+    background: none repeat 0 0 #5B3B23;
+    font-variant: small-caps;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.0em;
+    border: 1px solid #744b2c;
+
+}

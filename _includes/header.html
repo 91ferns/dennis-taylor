@@ -1,0 +1,65 @@
+<div id="top-bar">
+
+  <ul>
+  	<li><a class="login-button" href="javascript: void(0);">Client Login</a></li>
+      <!--li style="border-right: none;">Support</li-->
+  </ul>
+
+<div class="hidden" id="login-hide">
+
+  <div id="login-form-wrapper" class="hidden">
+
+  <h2>Login</h2>
+  <p>Login using the information we emailed you to locate your and view your items and transactions</p>
+
+  	<form action="/login" method="post">
+
+      	<input type="hidden" value="login" name="do">
+          <input type="hidden" name="time" value="<?=time()?>">
+
+          <div class="form-row input text Username">
+
+              <label>
+                  <strong>Username</strong>
+              </label>
+               <div class="input-div">
+              <input id="Username" class="ferns-hover" type="text" value="" name="Username">
+              </div>
+
+          </div>
+
+          <div class="form-row input password Password">
+
+              <label>
+                  <strong>Password</strong>
+              </label>
+              <div class="input-div">
+                  <input id="Password" class="ferns-hover" type="password" value="" name="Password">
+              </div>
+
+          </div>
+
+          <div class="form-row submit">
+              <input class="rectangle-button green" type="submit" value="Login">
+          </div>
+
+      </form>
+
+  </div>
+
+  </div>
+</div>
+
+<div id="no-top-bar">
+
+	<div class="header">
+
+	    <div id="logo">
+	        <a href="javascript: void(0);"><img src="/img/dtaylor.png" width="289" height="78" alt=""></a>
+	    </div>
+
+	</div>
+
+	{% include nav.html %}
+
+</div>
